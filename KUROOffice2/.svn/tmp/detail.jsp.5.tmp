@@ -1,0 +1,73 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
+<div class="email-app">
+
+
+	<div class="right-part mail-details bg-white overflow-auto"
+		style="width: calc(100% - 200px); margin-left: 200px;">
+<<<<<<< .mine
+			<div class="content">
+										<div class="col-xl-6 col-lg-6" style="margin-left: 30%; border: 1px solid #6C757D;">
+											<div class="card">
+												<div class="card-header">
+													<div class="mb-3 row">
+														<label class="col-sm-3 col-form-label">보낸사람</label>
+														<div style="display: flex;">
+															<input type="text" id="myInput" class="form-control"
+																name="empName" value="${empVO.empName }"
+																style="ime-mode: disabled; width: 85%; margin-right: 5px;"
+																placeholder="이름"
+																value="<c:if test="${not empty empName }">${empVO.empName }</c:if>"
+																readonly>
+||||||| .r321347
+=======
+
+
+		<div class="content"
+			style="background-color: #E9ECEF; height: 1000px;">
+			<div style="height: 30px;"></div>
+			<div class="col-xl-6 col-lg-6"
+				style="margin-left: 30%; border: 1px solid #6C757D;">
+				<div class="card">
+					<div class="card-header">
+						<div class="mb-3 row">
+							<label class="col-sm-3 col-form-label">보낸사람</label><span style="color: #050099;"><fmt:formatDate
+					value="${messageVO.mesDate }" pattern="yyyy/MM/dd HH:mm:ss"></fmt:formatDate></span>
+							<div style="display: flex;">
+								<input type="text" id="myInput" class="form-control"
+									name="empName" value="${empVO.empName }"
+									style="ime-mode: disabled; width: 85%; margin-right: 5px;"
+									placeholder="이름"
+									value="<c:if test="${not empty empName }">${empVO.empName }</c:if>"
+									readonly>
+
+							</div>
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="basic-form">
+							<div class="mb-3">
+								<textarea class="form-txtarea form-control" rows="8"
+									style="background-color: #FFFFFF; color: black;"
+									id="mesContent" placeholder="${messageVO.mesContent }"
+									name="mesContent" readonly></textarea>
+
+							</div>
+						</div>
+						<div>
+							<input type="button" class="btn btn-primary" value="답장"
+								onclick="openPopup()" style="margin-left: 84%;">
+>>>>>>> .r321692
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
